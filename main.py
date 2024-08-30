@@ -72,6 +72,15 @@ def create_log_file_path(ip):
 
 # 主函数
 def main():
+    # 显示程序名和作者信息
+    print("+" + "-" * 32 + "+")
+    print("|" + " " * 32 + "|")
+    print("|   多IP地址Ping测试记录工具   |")
+    print("|      作者: surenkid        |")
+    print("|" + " " * 32 + "|")
+    print("+" + "-" * 32 + "+")
+    print("\n")
+
     ips = read_ips_from_config()
     if not ips:
         print("配置文件格式不正确或为空。请按照正确格式编辑config.txt文件。")
